@@ -47,7 +47,9 @@ If you use [Windows WSL](https://learn.microsoft.com/en-us/windows/wsl/install),
 
 ## Setting up the development repository
 
-You should have your own repository and a copy of the demo repository in the same folder in your machine.
+Only one of the group members needs to execute the steps described in this section.
+
+You should have the group's repository and a copy of the demo repository within the same folder in your machine.
 Then, copy the contents of the demo repository to your own.
 
 ```bash
@@ -82,6 +84,12 @@ git push origin main
 At this point you should have the project skeleton in your local machine and be ready to start working on it.
 You may remove the `template-laravel` demo directory, as it is not needed anymore.
 
+Only one member of the group should commit and push these changes to the group repository. After this, the rest of the group members should clone the updated group repository to their local machines. file is not tracked by git (as indicated in the [.gitignore](.gitignore) file), each group member needs to create this file by copying it from the `.env.thingy` file provided in the demo repository.
+
+```bash
+# Create a new .env file based on the .env.thingy reference file.
+cp .env.thingy .env
+```
 
 ## Installing local PHP dependencies
 
